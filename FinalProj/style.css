@@ -42,8 +42,6 @@ h1 {
 .li {
     float: left;
     width: 12.5%;
-    /*border-right: 1px solid rgb(153, 153, 153);
-    box-sizing: border-box;*/
 }
 
 .li a {
@@ -63,13 +61,13 @@ h1 {
 .li a.active {
     color: white;
     text-decoration: none;
-    /*background-color: #4c7aaf;*/
 }
 
 .active {
     background-color: #688bff
 }
 
+/* Carousel */
 .carousel-inner img {
     width: 100%;
     height: auto;
