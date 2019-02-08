@@ -133,5 +133,8 @@ h1 {
 
 .carousel {
     margin-top: 100px;
-    margin-bottom: 100px;
+}
+
+p {
+    margin: 50px 20px 50px 20px;
 }
