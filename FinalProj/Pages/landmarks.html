@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sweden - Moore & McCaughan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="jumbotron text-center header">
+        <h1>Sweden</h1>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbarDesktop">
+            <div class="dropdown">
+                <a href="../index.html">
+                    <button class="dropbtn">Home</button></a>
+            </div>
+            <div class="dropdown">
+                <a href="history.html"><button class="dropbtn">History</button></a>
+                <div class="dropdownItems">
+                    <a href="history.html#prehistory">Prehistory</a>
+                    <a href="history.html#viking">The Vikings</a>
+                    <a href="history.html#worldwar">WWI & WWII</a>
+                    <a href="history.html#recent">Recent History</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="geography.html"><button class="dropbtn">Geography</button></a>
+                <div class="dropdownItems">
+                    <a href="#">Geography1</a>
+                    <a href="#">Geography2</a>
+                    <a href="#">Geography3</a>
+                    <a href="#">Geography4</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="demographics.html"><button class="dropbtn">Demographics</button></a>
+                <div class="dropdownItems">
+                    <a href="#">Demographics1</a>
+                    <a href="#">Demographics2</a>
+                    <a href="#">Demographics3</a>
+                    <a href="#">Demographics4</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="economy.html"><button class="dropbtn">Economy</button></a>
+                <div class="dropdownItems">
+                    <a href="#">Economy1</a>
+                    <a href="#">Economy2</a>
+                    <a href="#">Economy3</a>
+                    <a href="#">Economy4</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="landmarks.html"><button class="dropbtn active">Landmarks</button></a>
+                <div class="dropdownItems">
+                    <a href="#">Landmarks1</a>
+                    <a href="#">Landmarks2</a>
+                    <a href="#">Landmarks3</a>
+                    <a href="#">Landmarks4</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="natsymbols.html"><button class="dropbtn">National Symbols</button></a>
+                <div class="dropdownItems">
+                    <a href="#">National Symbols1</a>
+                    <a href="#">National Symbols2</a>
+                    <a href="#">National Symbols3</a>
+                    <a href="#">National Symbols4</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="culture.html"><button class="dropbtn">Culture</button></a>
+                <div class="dropdownItems">
+                    <a href="#">Culture1</a>
+                    <a href="#">Culture2</a>
+                    <a href="#">Culture3</a>
+                    <a href="#">Culture4</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Mobile navbar -->
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="geography.html">Geography</a>
+            <a href="demographics.html">Demographics</a>
+            <a href="economy.html">Economy</a>
+            <a href="landmarks.html" class="active">Landmarks</a>
+            <a href="natsymbols.html">National Symbols</a>
+            <a href="culture.html">Culture</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    
+        <!-- Tablet navbar -->
+        <div id="sideMenu">
+                <div class="sideMenuPage"><a href="../index.html">Home</a></div>
+                <div class="sideMenuPage"><a href="history.html">History</a></div>
+                <div class="sideMenuPage"><a href="geography.html">Geography</a></div>
+                <div class="sideMenuPage"><a href="demographics.html">Demographic</a></div>
+                <div class="sideMenuPage"><a href="economy.html">Economy</a></div>
+                <div class="sideMenuPage active"><a href="landmarks.html">Landmarks</a></div>
+                <div class="sideMenuPage"><a href="natsymbols.html">National Symbol</a></div>
+                <div class="sideMenuPage"><a href="culture.html">Culture</a></div>
+            </div>
+
+    <!-- Content -->
+    <div id="content">
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div id="names">Shawn McCaughan &amp; Melissa Moore</div>
+        <div id="date">February 19, 2019</div>
+        <div id="course">Responsive Web Design</div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
