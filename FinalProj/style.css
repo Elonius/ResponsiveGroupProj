@@ -27,6 +27,7 @@ h1 {
 
 /* End Header */
 
+/* Content */
 .thumbnail {
     width: 300px;
     float: right;
@@ -49,6 +50,12 @@ h1 {
 #content #main {
     margin-left: 5%;
 }
+
+cite {
+    float: right;
+}
+
+/* End Content */
 
 /* Footer */
 #footer {
@@ -78,15 +85,13 @@ h1 {
 
 /* End Footer */
 
-cite {
-    float: right;
-}
-
 /* Spans */
 .startFont {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+/* *****MEDIA QUERIES***** */
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
@@ -182,6 +187,7 @@ cite {
         float: left;
     }
 }
+
 /* End Desktop */
 
 /* Tablet */
@@ -236,6 +242,7 @@ cite {
         font-size: 1.2em;
     }
 }
+
 /* End Tablet */
 
 /* Mobile */
@@ -304,4 +311,7 @@ cite {
         display: none;
     }
 }
+
 /* End Mobile */
+
+/* *****END OF MEDIA QUERIES***** */
