@@ -94,7 +94,7 @@ cite {
 /* *****MEDIA QUERIES***** */
 
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 
     /* Navbar */
     .topnav,
@@ -192,7 +192,7 @@ cite {
 /* End Desktop */
 
 /* Tablet */
-@media screen and (min-width: 600px) and (max-width:1200px) {
+@media screen and (min-width: 600px) and (max-width:1300px) {
 
     .navbarDesktop,
     .topnav {
