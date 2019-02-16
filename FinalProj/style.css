@@ -137,12 +137,13 @@ cite {
         color: #333;
     }
 
-    .dropdown:hover .dropdownItems {
-        display: block;
+    .dropbtn:hover {
+        background-color: #ff6d48;
+        color: #333;
     }
 
-    .dropdown:hover .dropbtn {
-        background-color: #333;
+    .dropdown:hover .dropdownItems {
+        display: block;
     }
 
     .navbarDesktop {
