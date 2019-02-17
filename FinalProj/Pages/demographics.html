@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <!-- Top of page button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Header -->
     <div class="jumbotron text-center header">
         <h1>Sweden</h1>
@@ -68,20 +70,15 @@
         <div class="dropdown">
             <a href="natsymbols.html"><button class="dropbtn">National Symbols</button></a>
             <div class="dropdownItems">
-                <a href="#">National Symbols1</a>
-                <a href="#">National Symbols2</a>
-                <a href="#">National Symbols3</a>
-                <a href="#">National Symbols4</a>
+                <a href="natsymbols.html#flag">Flag of Sweden</a>
+                <a href="natsymbols.html#threecrowns">Three Crowns</a>
+                <a href="natsymbols.html#mothersvea">Mother Svea</a>
+                <a href="natsymbols.html#regalia">Regalia of Sweden</a>
+                <a href="natsymbols.html#torbjorn">Torbjörn</a>
             </div>
         </div>
         <div class="dropdown">
             <a href="culture.html"><button class="dropbtn">Culture</button></a>
-            <div class="dropdownItems">
-                <a href="#">Culture1</a>
-                <a href="#">Culture2</a>
-                <a href="#">Culture3</a>
-                <a href="#">Culture4</a>
-            </div>
         </div>
     </div>
 
@@ -205,6 +202,7 @@
         <div id="course">Responsive Web Design</div>
     </footer>
 
+    <!-- Mobile navbar script -->
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -213,6 +211,25 @@
             } else {
                 x.className = "topnav";
             }
+        }
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>

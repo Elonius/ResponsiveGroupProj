@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <!-- Top of page button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Header -->
     <div class="jumbotron text-center header">
         <h1>Sweden</h1>
@@ -25,7 +27,7 @@
                 <button class="dropbtn">Home</button></a>
         </div>
         <div class="dropdown">
-            <a href="history.html"><button class="dropbtn">History</button></a>
+            <a href="history.html"><button class="dropbtn active">History</button></a>
             <div class="dropdownItems">
                 <a href="#prehistory">Prehistory</a>
                 <a href="#viking">The Vikings</a>
@@ -68,20 +70,15 @@
         <div class="dropdown">
             <a href="natsymbols.html"><button class="dropbtn">National Symbols</button></a>
             <div class="dropdownItems">
-                <a href="#">National Symbols1</a>
-                <a href="#">National Symbols2</a>
-                <a href="#">National Symbols3</a>
-                <a href="#">National Symbols4</a>
+                <a href="natsymbols.html#flag">Flag of Sweden</a>
+                <a href="natsymbols.html#threecrowns">Three Crowns</a>
+                <a href="natsymbols.html#mothersvea">Mother Svea</a>
+                <a href="natsymbols.html#regalia">Regalia of Sweden</a>
+                <a href="natsymbols.html#torbjorn">Torbjörn</a>
             </div>
         </div>
         <div class="dropdown">
             <a href="culture.html"><button class="dropbtn">Culture</button></a>
-            <div class="dropdownItems">
-                <a href="#">Culture1</a>
-                <a href="#">Culture2</a>
-                <a href="#">Culture3</a>
-                <a href="#">Culture4</a>
-            </div>
         </div>
     </div>
 
@@ -126,7 +123,7 @@
         all of northwestern Europe, Sweden has a generally favourable climate relative to its northerly latitude owing
         to moderate southwesterly winds and the warm North Atlantic Current.
         <br>
-        <div class="thumbnail">
+        <div class="thumbnail right">
             <a href="https://www.britannica.com/place/Sweden/media/576478/61846" target="_blank">
                 <img src="../Images/mapofsweden.jpg" alt="Map of Sweden" class="img-thumbnail">
                 <div class="caption">
@@ -183,7 +180,7 @@
         Constantinople, on which they carried out numerous raids. The Byzantine Emperor Theophilos noticed their great
         skills in war, and invited them to serve as his personal bodyguard, known as the Varangian Guard. The Swedish
         Vikings, called Rus are believed to be the founding fathers of Kievan Rus'. The Arab traveller Ibn Fadlan
-        <div class="thumbnail">
+        <div class="thumbnail right">
             <a href="https://en.wikipedia.org/wiki/Sweden#/media/File:Vikings-Voyages.png" target="_blank">
                 <img src="../Images/Vikings-Voyages.png" alt="Viking voyages" class="img-thumbnail">
                 <div class="caption">
@@ -219,7 +216,7 @@
         overseas embassies. Sweden also allowed volunteers to fight for the White Guards alongside the Germans
         against the Red Guards and Russians in the Finnish Civil War, and briefly occupied the Åland Islands in
         co-operation with Germany.<br>
-        <div class="thumbnail">
+        <div class="thumbnail right">
             <a href="https://en.wikipedia.org/wiki/Sweden#/media/File:Farewell_to_home,_G%C3%B6teborg,_1905.jpg" target="_blank">
                 <img src="../Images/Farewell_to_home_Goteborg1905.jpg" alt="Gotebord 1905" class="img-thumbnail">
                 <div class="caption">
@@ -273,7 +270,7 @@
         <div id="course">Responsive Web Design</div>
     </footer>
 
-    <!-- Mobile navbar code -->
+    <!-- Mobile navbar script -->
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -282,6 +279,25 @@
             } else {
                 x.className = "topnav";
             }
+        }
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>

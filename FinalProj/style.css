@@ -6,21 +6,39 @@ html {
     background-color: #eeeeee;
 }
 
+/* Top of page button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ff3300;
+    color: #eeeeee;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
 /* Header */
 .header {
     width: 100%;
     height: 250px;
-    background-image: url("Images/Sweden-headercrop2.jpg");
+    background-image: url("Images/bannerpic.PNG");
 }
 
 .jumbotron {
     margin: 0;
+    padding: 10px;
 }
 
 h1 {
     margin: 0;
-    color: #fdf6ea;
-    font-size: 5em;
+    color: #333;
+    font-size: 6em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -29,12 +47,16 @@ h1 {
 /* Content */
 .thumbnail {
     width: 300px;
-    float: right;
-    margin: 10px;
+    /*float: right;*/
+    margin: 25px;
     border: #a5a5a5 thin solid;
     padding: 3px;
     font-size: 14px;
     text-align: center;
+}
+
+.margleft {
+    margin-left: 30px;
 }
 
 #content {
@@ -46,8 +68,9 @@ h1 {
     font-size: 1.2em;
 }
 
-#content #main {
-    margin-left: 3%;
+#main {
+    margin: 0 auto;
+    width: 1080px;
 }
 
 cite {
@@ -65,6 +88,58 @@ cite {
 .center {
     text-align: center;
 }
+
+/* Culture Page */
+.cultureHeader {
+    margin-bottom: 50px;
+}
+
+.cultureButton {
+    width: 50%;
+}
+
+.cultureButton:hover {
+    background-color: darkslategray;
+}
+
+.cultureImg {
+    width: 100%;
+}
+
+.cultureSections {
+    width: 500px;
+    float: left;
+    margin: 3%
+}
+
+.cultureCollapse {
+    width: 100%;
+}
+
+.cultureArtHeader {
+    padding-left: 200px;
+}
+
+.cultureBlurb {
+    margin-left: 5%;
+}
+
+.topCultureImg,
+.bottomCultureImg {
+    margin-bottom: 80px;
+}
+
+.cultureInfo {
+    text-align: center;
+    width: 100%;
+
+}
+
+.cultureContentHeader {
+    text-align: center;
+}
+
+/* End Culture Page */
 /* End Content */
 
 /* Footer */
@@ -73,25 +148,26 @@ cite {
     padding-top: 15px;
     background-color: #333;
     /*width: 100%;*/
-    height: 100px;
-    margin-top: -100px;
+    height: 80px;
+    margin-top: -80px;
     color: #f2f2f2;
     font-size: 18px;
 }
 
-#names {
+/*#names {
     float: left;
     margin-left: 20px
 }
 
 #course {
     text-align: center;
+    width: auto;
 }
 
 #date {
     float: right;
     margin-right: 20px;
-}
+}*/
 
 /* End Footer */
 
@@ -177,20 +253,29 @@ cite {
     }
 
     /* Content */
-    /*#content {
-        height: 100%;
-        margin: 50px 20% 50px 20%;
+    #cultureContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 11% 50px 11%;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+/******************************************************/
+    #homeContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 12% 50px 12%;
         line-height: 165%;
         font-size: 1.2em;
     }
 
-    #content #main {
-        margin-left: 5%;
-    }*/
-
     .pageCard {
-        margin: 35px;
+        margin: 30px;
         float: left;
+        width: 18rem;
+        /*margin-left: 7.5%;*/
     }
 
     .chart {
@@ -200,8 +285,8 @@ cite {
 
 /* End Desktop */
 
-/* Tablet */
-@media screen and (min-width: 600px) and (max-width:1300px) {
+/* Large tablet */
+@media screen and (min-width: 984px) and (max-width:1300px) {
 
     .navbarDesktop,
     .topnav {
@@ -248,6 +333,96 @@ cite {
     /* Content */
     #content {
         margin: 50px 12px 50px 175px;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+
+    #cultureContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 4% 50px 17%;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+/******************************************************/
+    #homeContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 15% 50px 15%;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+}
+
+/* Medium Tablet */
+@media screen and (min-width: 600px) and (max-width: 984px) {
+
+    .navbarDesktop,
+    .topnav {
+        display: none;
+    }
+
+    #sideMenu {
+        /*list-style-type: none;*/
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        height: 100%;
+        position: absolute;
+        display: block;
+        /*text-decoration: none;*/
+        clear: both;
+        text-align: center;
+        cursor: default;
+        padding-right: 20px;
+        /*color: #333*/
+    }
+
+    .sideMenuPage.active {
+        background-color: #ff3300;
+    }
+
+    .sideMenuPage:hover {
+        background-color: #ff6d48;
+    }
+
+    .sideMenuPage {
+        padding: 5px;
+        border-bottom: 1px black solid;
+        /*border-right: 1px black solid;*/
+        background-color: #333;
+        padding: .7em;
+    }
+
+    .sideMenuPage a {
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+    /* Content */
+    #content {
+        margin: 50px 12px 50px 175px;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+
+    #cultureContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 0% 50px 27%;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+/******************************************************/
+    #homeContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 15% 50px 15%;
         line-height: 165%;
         font-size: 1.2em;
     }
@@ -319,6 +494,34 @@ cite {
 
     .topnav .icon {
         display: none;
+    }
+
+    /* Content */
+    #content {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 2% 50px 2%;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+
+    #cultureContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 0% 50px 4%;
+        line-height: 165%;
+        font-size: 1.2em;
+    }
+    /******************************************************/
+    #homeContent {
+        min-height: 100%;
+        overflow: auto;
+        padding-bottom: 75px;
+        margin: 50px 15% 50px 15%;
+        line-height: 165%;
+        font-size: 1.2em;
     }
 }
 

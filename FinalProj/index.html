@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <!-- Top of page button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Header -->
     <div class="jumbotron text-center header">
         <h1>Sweden</h1>
@@ -50,7 +52,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <a href="economy.html"><button class="dropbtn">Economy</button></a>
+            <a href="Pages/economy.html"><button class="dropbtn">Economy</button></a>
             <div class="dropdownItems">
                 <a href="Pages/economy.html#taxes">Taxes</a>
                 <a href="Pages/economy.html#transport">Transport</a>
@@ -59,7 +61,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <a href="landmarks.html"><button class="dropbtn">Landmarks</button></a>
+            <a href="Pages/landmarks.html"><button class="dropbtn">Landmarks</button></a>
             <div class="dropdownItems">
                 <a href="Pages/landmarks.html#architecture">Architecture</a>
                 <a href="Pages/landmarks.html#natural">Natural</a>
@@ -68,20 +70,15 @@
         <div class="dropdown">
             <a href="Pages/natsymbols.html"><button class="dropbtn">National Symbols</button></a>
             <div class="dropdownItems">
-                <a href="#">National Symbols1</a>
-                <a href="#">National Symbols2</a>
-                <a href="#">National Symbols3</a>
-                <a href="#">National Symbols4</a>
+                <a href="Pages/natsymbols.html#flag">Flag of Sweden</a>
+                <a href="Pages/natsymbols.html#threecrowns">Three Crowns</a>
+                <a href="Pages/natsymbols.html#mothersvea">Mother Svea</a>
+                <a href="Pages/natsymbols.html#regalia">Regalia of Sweden</a>
+                <a href="Pages/natsymbols.html#torbjorn">Torbjörn</a>
             </div>
         </div>
         <div class="dropdown">
             <a href="Pages/culture.html"><button class="dropbtn">Culture</button></a>
-            <div class="dropdownItems">
-                <a href="#">Culture1</a>
-                <a href="#">Culture2</a>
-                <a href="#">Culture3</a>
-                <a href="#">Culture4</a>
-            </div>
         </div>
     </div>
 
@@ -113,48 +110,52 @@
     </div>
 
     <!-- Content -->
-    <div id="content">
-        <h3>Can't afford a vacation to the beautiful country of Sweden? Welcome to the next best thing! Take a tour of
+    <div id="homeContent" class="text-center">
+        <h3>Can't afford a vacation to the beautiful country of Sweden? Welcome to the next best
+            thing! Take a tour of
             all things Sweden has to offer, and learn a thing or two along the way.</h3>
         <br><br>
+
         <div id="main">
-            <div class="card pageCard" style="width: 18rem;">
-                <img class="card-img-top" src="Images/Sweden1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Music</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card pageCard">
+                    <img class="card-img-top" src="Images/Regalia.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">National symbols of Sweden</h4>
+                        <p class="card-text">Sweden is represented by many things, even a video game character!</p>
+                        <a href="Pages/natsymbols.html" class="btn btn-primary">Lets go look!</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card pageCard" style="width: 18rem;">
-                <img class="card-img-top" src="Images/Sweden1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Cool history fact</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card pageCard">
+                    <img class="card-img-top" src="Images/Architecture3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Landmarks of Sweden</h4>
+                        <p class="card-text">Sweden has some of the world's most beautiful buildings and scenery!</p>
+                        <a href="Pages/landmarks.html" class="btn btn-primary">Lets go look!</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card pageCard" style="width: 18rem;">
-                <img class="card-img-top" src="Images/Sweden1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">#1 in the world</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card pageCard">
+                    <img class="card-img-top" src="Images/FoodFika.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Swedens culture</h4>
+                        <p class="card-text">Sweden is the world's second largest consumer of coffee, thanks to Fika!</p>
+                        <a href="Pages/culture.html" class="btn btn-primary">Lets go look!</a>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer id="footer">
-        <div id="names">Shawn McCaughan &amp; Melissa Moore</div>
-        <div id="date">February 19, 2019</div>
-        <div id="course">Responsive Web Design</div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div id="names" class="col-lg-4">Shawn McCaughan &amp; Melissa Moore</div>
+                <div id="date" class="col-lg-4">February 19, 2019</div>
+                <div id="course" class="col-lg-4">Responsive Web Design</div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Mobile navbar script -->
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -163,6 +164,25 @@
             } else {
                 x.className = "topnav";
             }
+        }
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>

@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <!-- Top of page button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Header -->
     <div class="jumbotron text-center header">
         <h1>Sweden</h1>
@@ -68,20 +70,15 @@
         <div class="dropdown">
             <a href="natsymbols.html"><button class="dropbtn">National Symbols</button></a>
             <div class="dropdownItems">
-                <a href="#">National Symbols1</a>
-                <a href="#">National Symbols2</a>
-                <a href="#">National Symbols3</a>
-                <a href="#">National Symbols4</a>
+                <a href="natsymbols.html#flag">Flag of Sweden</a>
+                <a href="natsymbols.html#threecrowns">Three Crowns</a>
+                <a href="natsymbols.html#mothersvea">Mother Svea</a>
+                <a href="natsymbols.html#regalia">Regalia of Sweden</a>
+                <a href="natsymbols.html#torbjorn">Torbjörn</a>
             </div>
         </div>
         <div class="dropdown">
             <a href="culture.html"><button class="dropbtn active">Culture</button></a>
-            <div class="dropdownItems">
-                <a href="#">Culture1</a>
-                <a href="#">Culture2</a>
-                <a href="#">Culture3</a>
-                <a href="#">Culture4</a>
-            </div>
         </div>
     </div>
 
@@ -113,8 +110,114 @@
     </div>
 
     <!-- Content -->
-    <div id="content">
+    <div id="cultureContent">
+        <h2 class="cultureHeader">Swedish Culture</h2>
+        <p class="cultureBlurb">One of the key characteristics of Swedish culture is that Swedes are egalitarian in
+            nature, humble and find boasting absolutely unacceptable. In many ways, Swedes prefer to listen to others
+            as opposed to ensuring that their own voice is heard. The family in Sweden is extremely important and as
+            such, the rights of children are well protected. The Swedes celebrate many traditions throughout the year.
+            Some of the highlights include: Valborg, Midsummer, Kräftskiva (Crayfish Party), and Jul (Christmas).</p>
+        <p class="cultureBlurb">Explore Swedish culture through their food, music, archictecture and dance!</p>
 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="cultureSections col-lg">
+
+                    <div class="cultureCollapse">
+                        <h3 class="cultureContentHeader"><a href="#musicCollapse" class="btn btn-dark cultureButton"
+                                data-toggle="collapse">Music</a></h3>
+                        <div class="cultureInfo collapse" data-parent="#cultureContent" id="musicCollapse">There are
+                            many talented artists who come from Sweden. <i><strong>ABBA</strong></i> is definitely the
+                            most popular with 380 million albums sold worldwide. Then there's <i><strong>Europe</strong></i>,
+                            famously known for their hit song The Final Countdown. Metal is also big in Sweden which
+                            brings the progressive-metal progressive-rock band called <i><strong>Opeth</strong></i>.
+                            They incorporate progressive, folk, blues, classical, jazz, and death metal influences into
+                            their music and have had several major world tours.</div>
+                        <picture>
+                            <source media="(min-width: 1300px)" srcset="../Images/Music.jpg">
+                            <source media="(max-width: 600px)" srcset="../Images/Music3.jpg">
+                            <img class="cultureImg topCultureImg" src="../Images/Music4.jpg" alt="Swedish bands">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="cultureSections col-lg">
+
+                    <div class="cultureCollapse">
+                        <h3 class="cultureContentHeader"><a href="#foodCollapse" class="btn btn-dark cultureButton"
+                                data-toggle="collapse">Food</a></h3>
+                        <div class="cultureInfo collapse" data-parent="#cultureContent" id="foodCollapse"><i><strong>Fika</strong></i>
+                            is a Swedish coffee break. This coffee break is meant for you to slow down, maybe chat with
+                            friends, family, or coworkers, and relax midday. Another popular food is the <i><strong>Swedish
+                                    meatball</strong></i>. Swedish meatballs traditionally use spices like allspice,
+                            nutmeg, white pepper, and sometimes ground ginger as flavoring. They are also much smaller
+                            in size compared to Italian meatballs. Another popular dish is called <i><strong>Smörgåstårta</strong></i>,
+                            or sandwich cakes. They are savoury cakes with varying fillings and toppings, often
+                            including shrimp, ham, cold cuts, cucumbers, etc.</div>
+                        <picture>
+                            <source media="(min-width: 1300px)" srcset="../Images/FoodFika.jpg">
+                            <source media="(max-width: 600px)" srcset="../Images/FoodSmorgastarta2.jpg">
+                            <img class="cultureImg topCultureImg" src="../Images/FoodMeatballs2.jpg" alt="Swedish foods">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cultureSections col-lg">
+
+                    <div class="cultureCollapse">
+                        <h3 class="cultureContentHeader"><a href="#danceCollapse" class="btn btn-dark cultureButton"
+                                data-toggle="collapse">Dance</a></h3>
+                        <div class="cultureInfo collapse" data-parent="#cultureContent" id="danceCollapse">Swedish folk
+                            dance comes in a variety of different styles. A common varient is the <i><strong>Bingsjö
+                                    Polska</strong></i>. Another version of the Polska is called the <i><strong>Hambo</strong></i>.
+                            There is also a dance known as <i><strong>Gammaldans</strong></i>, which translates to "old
+                            dance". The Gammaldans generally consists of the vals (waltz),
+                            schottische/schottis/reinlender, polka, snoa, and sometimes the mazurka.</div>
+                        <picture>
+                            <source media="(min-width: 1300px)" srcset="../Images/DanceHambo.jpg">
+                            <source media="(max-width: 600px)" srcset="../Images/Dance2.jpg">
+                            <img class="cultureImg bottomCultureImg" src="../Images/DanceTraditionalFolk.jpg" alt="Swedish styles of dance">
+                        </picture>
+
+                    </div>
+                </div>
+
+                <div class="cultureSections col-lg">
+
+                    <div class="cultureCollapse">
+                        <h3 class="cultureContentHeader"><a href="#architectureCollapse" class="btn btn-dark cultureButton"
+                                data-toggle="collapse">Architecture</a></h3>
+                        <div class="cultureInfo collapse" data-parent="#cultureContent" id="architectureCollapse">There
+                            are many awe-inspiring works of architectural art in Sweden, such as the <i><strong>Turning
+                                    Torso</strong></i>, a residential building that holds the record as the tallest
+                            building in the Scandinavian countries and regarded as the first twisted skyscraper in the
+                            world. Other marvels include the <i><strong>Emporia</strong></i> shopping mall and the <i><strong>79&amp;Park</strong></i>
+                            residential building in Malmö and Stockholm respectively.</div>
+                        <picture>
+                            <source media="(min-width: 1300px)" srcset="../Images/ArchitectureMobile.jpg">
+                            <source media="(max-width: 600px)" srcset="../Images/ArchitectureDesktop.jpg">
+                            <img class="cultureImg bottomCultureImg" src="../Images/ArchitectureTablet.jpg" alt="Swedish architecture">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div><cite>Cited from <a href="https://viewstockholm.com/fika-lagom/" target="_blank">ViewStockholm</a>, <a
+                    href="https://www.designboom.com/architecture/big-bjarke-ingels-group-79-park-stockhom-oscar-properties-11-08-2018/"
+                    target="_blank">DesignBoom</a>, <a href="https://sweden.se/culture-traditions/swedish-architecture/
+            "
+                    target="_blank">Sweden.se</a>, <a href="http://www.nordstjernan.com/news/traditions/8481/" target="_blank">Nordstjernan</a>,
+                <a href="https://www.travelblog.org/Photos/1199827" target="_blank">TravelBlog</a>, <a href="https://en.wikipedia.org/wiki/Opeth"
+                    target="_blank">Wikipedia/Opeth</a>, <a href="https://www.chowhound.com/food-news/185791/what-is-the-difference-between-italian-meatballs-and-swedish-meatballs/"
+                    target="_blank">Chowhound</a>, <a href="https://en.wikipedia.org/wiki/Sm%C3%B6rg%C3%A5st%C3%A5rta"
+                    target="_blank">Wikipedia/Smorgastarta</a>, <a href="http://www.folkdance.com/scandi/whatitis.htm">FolkDance</a>,
+                <a href="https://en.wikipedia.org/wiki/Turning_Torso">Wikipedia/TurningTorso</a>, <a href="https://www.commisceo-global.com/resources/country-guides/sweden-guide">Commisceo
+                    Global</a>,
+                <a href="https://www.lunduniversity.lu.se/about/visit-lund-university/swedish-culture-and-traditions">LundUniversity</a></cite></div>
+        <br><br>
     </div>
 
     <!-- Footer -->
@@ -124,6 +227,7 @@
         <div id="course">Responsive Web Design</div>
     </footer>
 
+    <!-- Mobile navbar script -->
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -132,6 +236,25 @@
             } else {
                 x.className = "topnav";
             }
+        }
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>
