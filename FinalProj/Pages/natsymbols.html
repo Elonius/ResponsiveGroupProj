@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sweden - Moore &amp; McCaughan</title>
+    <title>Sweden - National Symbols</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -102,7 +102,7 @@
         <div class="sideMenuPage"><a href="../index.html">Home</a></div>
         <div class="sideMenuPage"><a href="history.html">History</a></div>
         <div class="sideMenuPage"><a href="geography.html">Geography</a></div>
-        <div class="sideMenuPage"><a href="demographics.html">Demographic</a></div>
+        <div class="sideMenuPage"><a href="demographics.html">Demographics</a></div>
         <div class="sideMenuPage"><a href="economy.html">Economy</a></div>
         <div class="sideMenuPage"><a href="landmarks.html">Landmarks</a></div>
         <div class="sideMenuPage active"><a href="natsymbols.html">National Symbol</a></div>
@@ -114,7 +114,7 @@
 
         <h2 id="flag">Flag of Sweden</h2><br>
         <div class="thumbnail right">
-            <a href="https://en.wikipedia.org/wiki/Flag_of_Sweden" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/Flag_of_Sweden" target="_blank" data-toggle="tooltip" title="Click to go to source">
                 <img src="../Images/Flag_of_Sweden.svg.png" alt="Flag of Sweden" class="img-thumbnail">
             </a>
         </div>
@@ -128,7 +128,7 @@
         <hr><br>
         <h2 id="threecrowns">Three Crowns</h2><br>
         <div class="thumbnail right">
-            <a href="https://en.wikipedia.org/wiki/Three_Crowns" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/Three_Crowns" target="_blank" data-toggle="tooltip" title="Click to go to source">
                 <img src="../Images/ThreeCrowns.png" alt="Swedens Three Crowns" class="img-thumbnail">
             </a>
         </div>
@@ -137,7 +137,7 @@
         coronets arranged with two above and one below on a blue background. This emblem has been utilised by Sweden
         since at least 1336. As there are three crowns this has led to speculation about the symbolism:
         <div class="thumbnail left">
-            <a href="https://www.sweden.org.za/three-crowns.html" target="_blank">
+            <a href="https://www.sweden.org.za/three-crowns.html" target="_blank" data-toggle="tooltip" title="Click to go to source">
                 <img src="../Images/ThreeCrowns2.png" alt="Swedens Three Crowns" class="img-thumbnail">
             </a>
         </div>
@@ -157,7 +157,7 @@
         <hr><br>
         <h2 id="mothersvea">Mother Svea</h2>
         <div class="thumbnail right">
-            <a href="https://en.wikipedia.org/wiki/Mother_Svea" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/Mother_Svea" target="_blank" data-toggle="tooltip" title="Click to go to source">
                 <img src="../Images/MotherSvea.png" alt="Mother Svea" class="img-thumbnail">
             </a>
         </div>
@@ -175,7 +175,7 @@
         <hr><br>
         <h2 id="regalia">Regalia of Sweden</h2><br>
         <div class="thumbnail left">
-            <a href="https://en.wikipedia.org/wiki/Regalia_of_Sweden" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/Regalia_of_Sweden" target="_blank" data-toggle="tooltip" title="Click to go to source">
                 <img src="../Images/Regalia.jpg" alt="Regalia of Sweden" class="img-thumbnail">
             </a>
         </div>
@@ -201,7 +201,8 @@
         <hr><br>
         <h2 id="torbjorn">Torbjörn</h2><br>
         <div class="thumbnail right">
-            <a href="https://en.wikipedia.org/wiki/Characters_of_Overwatch#Torbj%C3%B6rn" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/Characters_of_Overwatch#Torbj%C3%B6rn" target="_blank" data-toggle="tooltip"
+                title="Click to go to source">
                 <img src="../Images/torbjorn.jpg" alt="Torbjörn from Overwatch" class="img-thumbnail">
             </a>
         </div>
@@ -222,9 +223,13 @@
 
     <!-- Footer -->
     <footer id="footer">
-        <div id="names">Shawn McCaughan &amp; Melissa Moore</div>
-        <div id="date">February 19, 2019</div>
-        <div id="course">Responsive Web Design</div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div id="names" class="col-lg-4 col-xs-12">Shawn McCaughan &amp; Melissa Moore</div>
+                <div id="date" class="col-lg-4 col-xs-12">February 19, 2019</div>
+                <div id="course" class="col-lg-4 col-xs-12">Responsive Web Design</div>
+            </div>
+        </div>
     </footer>
 
     <!-- Mobile navbar script -->
@@ -238,7 +243,7 @@
             }
         }
 
-        // When the user scrolls down 20px from the top of the document, show the button
+        // When the user scrolls down 300px from the top of the document, show the button
         window.onscroll = function () {
             scrollFunction()
         };

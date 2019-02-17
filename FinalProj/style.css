@@ -6,23 +6,6 @@ html {
     background-color: #eeeeee;
 }
 
-/* Top of page button */
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 100px;
-    right: 50px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #ff3300;
-    color: #eeeeee;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-}
-
 /* Header */
 .header {
     width: 100%;
@@ -47,7 +30,6 @@ h1 {
 /* Content */
 .thumbnail {
     width: 300px;
-    /*float: right;*/
     margin: 25px;
     border: #a5a5a5 thin solid;
     padding: 3px;
@@ -68,13 +50,14 @@ h1 {
     font-size: 1.2em;
 }
 
-#main {
-    margin: 0 auto;
-    width: 1080px;
+.transparentBackground {
+    padding: 15px;
+    background-color: #4747473f;
 }
 
 cite {
     float: right;
+    font-size: 0.9em;
 }
 
 .left {
@@ -132,7 +115,6 @@ cite {
 .cultureInfo {
     text-align: center;
     width: 100%;
-
 }
 
 .cultureContentHeader {
@@ -147,38 +129,15 @@ cite {
     position: relative;
     padding-top: 15px;
     background-color: #333;
-    /*width: 100%;*/
     height: 80px;
     margin-top: -80px;
     color: #f2f2f2;
     font-size: 18px;
 }
 
-/*#names {
-    float: left;
-    margin-left: 20px
-}
-
-#course {
-    text-align: center;
-    width: auto;
-}
-
-#date {
-    float: right;
-    margin-right: 20px;
-}*/
-
 /* End Footer */
 
-/* Spans */
-.startFont {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
 /* *****MEDIA QUERIES***** */
-
 /* Desktop */
 @media screen and (min-width: 1300px) {
 
@@ -186,6 +145,23 @@ cite {
     .topnav,
     #sideMenu {
         display: none;
+    }
+
+    /* Top of page button */
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #ff3300;
+        color: #eeeeee;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
     }
 
     .dropbtn {
@@ -236,7 +212,6 @@ cite {
         background-color: #333;
         width: 100%;
         height: 50px;
-        /*position: sticky;*/
         top: 0;
         margin-top: 0px;
         padding: 0;
@@ -245,11 +220,6 @@ cite {
     .active {
         background-color: #ff3300;
         color: white;
-    }
-
-    .transparentBackground {
-        padding: 15px;
-        background-color: #4747473f;
     }
 
     /* Content */
@@ -261,7 +231,12 @@ cite {
         line-height: 165%;
         font-size: 1.2em;
     }
-/******************************************************/
+
+    #main {
+        margin: 0 auto;
+        width: 1080px;
+    }
+
     #homeContent {
         min-height: 100%;
         overflow: auto;
@@ -275,7 +250,6 @@ cite {
         margin: 30px;
         float: left;
         width: 18rem;
-        /*margin-left: 7.5%;*/
     }
 
     .chart {
@@ -293,8 +267,24 @@ cite {
         display: none;
     }
 
+    /* Top of page button */
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        left: 50px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #ff3300;
+        color: #eeeeee;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
     #sideMenu {
-        /*list-style-type: none;*/
         font-size: 1.1em;
         margin: 0;
         padding: 0;
@@ -302,11 +292,9 @@ cite {
         height: 100%;
         position: absolute;
         display: block;
-        /*text-decoration: none;*/
         clear: both;
         text-align: center;
         cursor: default;
-        /*color: #333*/
     }
 
     .sideMenuPage.active {
@@ -320,7 +308,6 @@ cite {
     .sideMenuPage {
         padding: 5px;
         border-bottom: 1px black solid;
-        /*border-right: 1px black solid;*/
         background-color: #333;
         padding: .7em;
     }
@@ -345,12 +332,24 @@ cite {
         line-height: 165%;
         font-size: 1.2em;
     }
-/******************************************************/
+
+    .pageCard {
+        margin: 20px;
+        float: left;
+        width: 22rem;
+        margin-left: 5%;
+    }
+
+    #main {
+        margin: 0 auto;
+        width: 850px;
+    }
+
     #homeContent {
         min-height: 100%;
         overflow: auto;
         padding-bottom: 75px;
-        margin: 50px 15% 50px 15%;
+        margin: 50px 50px 50px 160px;
         line-height: 165%;
         font-size: 1.2em;
     }
@@ -364,8 +363,24 @@ cite {
         display: none;
     }
 
+    /* Top of page button */
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 125px;
+        left: 50px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #ff3300;
+        color: #eeeeee;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
     #sideMenu {
-        /*list-style-type: none;*/
         font-size: 1.1em;
         margin: 0;
         padding: 0;
@@ -373,12 +388,10 @@ cite {
         height: 100%;
         position: absolute;
         display: block;
-        /*text-decoration: none;*/
         clear: both;
         text-align: center;
         cursor: default;
         padding-right: 20px;
-        /*color: #333*/
     }
 
     .sideMenuPage.active {
@@ -392,7 +405,6 @@ cite {
     .sideMenuPage {
         padding: 5px;
         border-bottom: 1px black solid;
-        /*border-right: 1px black solid;*/
         background-color: #333;
         padding: .7em;
     }
@@ -417,14 +429,35 @@ cite {
         line-height: 165%;
         font-size: 1.2em;
     }
-/******************************************************/
+
+    .pageCard {
+        margin: 20px;
+        margin-left: 10%;
+        float: left;
+        width: 23rem;
+    }
+
+    #main {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #footer {
+        height: 120px;
+        margin-top: -120px;
+    }
+
     #homeContent {
         min-height: 100%;
         overflow: auto;
         padding-bottom: 75px;
-        margin: 50px 15% 50px 15%;
+        margin: 30px 5% 50px 155px;
         line-height: 165%;
         font-size: 1.2em;
+    }
+
+    .landmarkDescription p {
+        display: none;
     }
 }
 
@@ -496,6 +529,11 @@ cite {
         display: none;
     }
 
+    #footer {
+        height: 120px;
+        margin-top: -120px;
+    }
+
     /* Content */
     #content {
         min-height: 100%;
@@ -510,18 +548,37 @@ cite {
         min-height: 100%;
         overflow: auto;
         padding-bottom: 75px;
-        margin: 50px 0% 50px 4%;
+        margin: 50px 2% 50px 2%;
         line-height: 165%;
         font-size: 1.2em;
     }
-    /******************************************************/
+
     #homeContent {
         min-height: 100%;
         overflow: auto;
         padding-bottom: 75px;
-        margin: 50px 15% 50px 15%;
+        margin: 50px 2% 50px 2%;
         line-height: 165%;
         font-size: 1.2em;
+    }
+
+    .pageCard {
+        margin: 20px;
+        margin-left: 5%;
+        float: left;
+        width: 30rem;
+    }
+
+    #myBtn {
+        display: none;
+    }
+
+    .landmarkDescription p {
+        display: none;
+    }
+
+    .landmarkDescription h3 {
+        font-size: 1em;
     }
 }
 

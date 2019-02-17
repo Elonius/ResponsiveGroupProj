@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sweden - Moore &amp; McCaughan</title>
+    <title>Sweden - History</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -124,7 +124,8 @@
         to moderate southwesterly winds and the warm North Atlantic Current.
         <br>
         <div class="thumbnail right">
-            <a href="https://www.britannica.com/place/Sweden/media/576478/61846" target="_blank">
+            <a href="https://www.britannica.com/place/Sweden/media/576478/61846" target="_blank" data-toggle="tooltip"
+                title="Click to go to source">
                 <img src="../Images/mapofsweden.jpg" alt="Map of Sweden" class="img-thumbnail">
                 <div class="caption">
                     <p>Swedish emigrants boarding ship in Gothenburg in 1905</p>
@@ -181,7 +182,8 @@
         skills in war, and invited them to serve as his personal bodyguard, known as the Varangian Guard. The Swedish
         Vikings, called Rus are believed to be the founding fathers of Kievan Rus'. The Arab traveller Ibn Fadlan
         <div class="thumbnail right">
-            <a href="https://en.wikipedia.org/wiki/Sweden#/media/File:Vikings-Voyages.png" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/Sweden#/media/File:Vikings-Voyages.png" target="_blank" data-toggle="tooltip"
+                title="Click to go to source">
                 <img src="../Images/Vikings-Voyages.png" alt="Viking voyages" class="img-thumbnail">
                 <div class="caption">
                     <p>Viking expeditions (blue): going into Russia were Swedish Vikings.</p>
@@ -217,7 +219,8 @@
         against the Red Guards and Russians in the Finnish Civil War, and briefly occupied the Åland Islands in
         co-operation with Germany.<br>
         <div class="thumbnail right">
-            <a href="https://en.wikipedia.org/wiki/Sweden#/media/File:Farewell_to_home,_G%C3%B6teborg,_1905.jpg" target="_blank">
+            <a href="https://en.wikipedia.org/wiki/Sweden#/media/File:Farewell_to_home,_G%C3%B6teborg,_1905.jpg" target="_blank"
+                data-toggle="tooltip" title="Click to go to source">
                 <img src="../Images/Farewell_to_home_Goteborg1905.jpg" alt="Gotebord 1905" class="img-thumbnail">
                 <div class="caption">
                     <p>Swedish emigrants boarding ship in Gothenburg in 1905</p>
@@ -265,9 +268,13 @@
 
     <!-- Footer -->
     <footer id="footer">
-        <div id="names">Shawn McCaughan &amp; Melissa Moore</div>
-        <div id="date">February 19, 2019</div>
-        <div id="course">Responsive Web Design</div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div id="names" class="col-lg-4 col-xs-12">Shawn McCaughan &amp; Melissa Moore</div>
+                <div id="date" class="col-lg-4 col-xs-12">February 19, 2019</div>
+                <div id="course" class="col-lg-4 col-xs-12">Responsive Web Design</div>
+            </div>
+        </div>
     </footer>
 
     <!-- Mobile navbar script -->
@@ -281,7 +288,7 @@
             }
         }
 
-        // When the user scrolls down 20px from the top of the document, show the button
+        // When the user scrolls down 300px from the top of the document, show the button
         window.onscroll = function () {
             scrollFunction()
         };
